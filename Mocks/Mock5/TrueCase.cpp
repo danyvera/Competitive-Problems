@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 #include <iostream>
+//LINK DEL PROBLEMA EN LeetCode: https://leetcode.com/problems/detect-capital/
 /*
 Dado un string, decir si es un caso verdadero o un caso falso
 Devolvemos "verdadero" si se cumple uno de los siguientes casos:
