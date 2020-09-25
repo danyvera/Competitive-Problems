@@ -4,10 +4,6 @@ using namespace std;
 //DECIR SI ES POSIBLE O NO FORMAR LA PALABRA CON EL STRING DE CARACTERES QUE NOS DAN
 //TODAS LAS LETRAS SON MINUSCULAS 
 
-//void ToLower(const string bucked){
-	//bucked = "";
-//}
-
 int main(){
 	string wanted;
 	cin >> wanted;
@@ -19,18 +15,18 @@ int main(){
 	//ToLower(charactersAvailable);
 	//cout << charactersAvailable.size() << "\n";
 
-	vector<char> bucked(30, 0);
+	vector<char> bucket(30, 0);
 	for(int i = 0; i < charactersAvailable.size(); ++i){
-		++bucked[charactersAvailable[i] - 'a'];
+		++bucket[charactersAvailable[i] - 'a'];
 	}
 
 	for(int i = 0; i < wanted.size(); ++i){
-		if(bucked[wanted[i] - 'a'] == 0){
+		if(bucket[wanted[i] - 'a'] == 0){
 			cout << "Impossible\n";
 			return 0;
 		}
 
-		--bucked[wanted[i] - 'a'];
+		--bucket[wanted[i] - 'a'];
 	}
 
 	cout << "Is possible\n";
