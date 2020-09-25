@@ -11,10 +11,6 @@ int main(){
 	string charactersAvailable;
 	cin >> charactersAvailable;
 
-	//cout << charactersAvailable.size() << "\n";
-	//ToLower(charactersAvailable);
-	//cout << charactersAvailable.size() << "\n";
-
 	vector<char> bucket(30, 0);
 	for(int i = 0; i < charactersAvailable.size(); ++i){
 		++bucket[charactersAvailable[i] - 'a'];
