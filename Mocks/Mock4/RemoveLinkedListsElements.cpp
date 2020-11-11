@@ -23,7 +23,7 @@ public:
             }
             else{
                 ListNode* p = l;    
-                if( l->next && l->next->val == val) {
+                if( l->next!=NULL && l->next->val == val) {
                     p->next = l->next->next;
                     l = p;
                 }
@@ -32,6 +32,6 @@ public:
                 }
             }
         }
-        return head;;
+        return head;
     }
 };
